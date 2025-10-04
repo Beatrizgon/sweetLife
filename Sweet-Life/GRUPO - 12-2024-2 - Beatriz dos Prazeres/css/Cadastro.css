@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #323232;
+    border: none;
+}
+
+.nav-link {
+    font-family: "Roboto", sans-serif;
+}
+
+#Logo {
+    position: relative;
+    text-align: center;
+    width: 11em;
+    height: 5em;
+}
+
+.navbar {
+    margin-top: -2em;
+}
+
+input,
+label {
+    display: block;
+    outline: none;
+    width: 100%;
+}
+
+a {
+    color: rgb(255, 27, 107);
+}
+
+.conta h3{
+    color: #333;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+body {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: rgb(255, 34, 78);
+
+}
+
+#main-container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+   }
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus {
+    border-color: #E60084;
+}
+
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #ffe11ccd;
+    color: #272626;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+select {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+    height: 40px;
+}
+
+select:focus {
+    border-color: #E60084;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement,
+#agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+.error-validation {
+    color: #c10000;
+    position: absolute;
+    margin-top: 7px;
+    top: 57px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.template {
+    display: none;
+}
+
+@media(max-width: 500px) {
+    #main-container {
+        max-width: 100%;
+    }
+
+    form .half-box .half-box .spacing {
+        margin-bottom: 15px;
+        padding: 10px;
+        width: 90%;
+    }
+
+}

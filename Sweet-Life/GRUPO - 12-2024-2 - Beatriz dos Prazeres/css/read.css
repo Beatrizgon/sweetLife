@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    background: #222;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Barra de navegação fixa no topo */
+.navbar {
+    justify-content: center;
+    gap: 55px;
+    display: flex;
+    padding: 0px;
+    background-color: #fff; /* Fundo semi-transparente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que a navbar fique sempre por cima */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+/* Espaçamento para o formulário */
+form {
+    border: 3px solid rgba(0,0,0,1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 80px; /* Espaçamento para a navbar */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+}
+
+.box input,
+label {
+    border-radius: 10px;
+    height: 35px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.box input:hover {
+    background-color: rgba(0, 0, 0, 0.171);
+}
+
+label {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    
+}
+
+input[type="submit"] {
+    background-color:  rgb(3, 194, 0);
+    cursor: pointer;
+    width: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(15, 149, 0, 0.865);
+}
+
+.enviado {
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsividade para celulares */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="submit"] {
+        width: 70%; 
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px; 
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .box input, .box label {
+        width: 90%;
+    }
+}
+
+/* Responsividade para tablets (entre 600px
